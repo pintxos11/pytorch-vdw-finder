@@ -4,7 +4,7 @@ from PIL import Image
 import os
 import shutil
 
-# --- Load model ---
+# --- Load model named model.pth ---
 model = models.resnet50(pretrained=False)
 model.fc = torch.nn.Linear(model.fc.in_features, 2)
 model.load_state_dict(torch.load("model.pth", map_location="cpu"))
