@@ -10,9 +10,13 @@ https://drive.google.com/file/d/1SM9NkKZGuu-3gXeLTYtkhYzj6tiht328/view?usp=drive
 The code to classify a folder containing the optical images of an exfoliation: 
 
 import torch
+
 from torchvision import models, transforms
+
 from PIL import Image
+
 import os
+
 import shutil
 
 # --- Load model ---
